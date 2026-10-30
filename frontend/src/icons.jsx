@@ -1,0 +1,22 @@
+import React from 'react';
+const icon = paths => function Icon({ size = 24, ...props }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths.map((d, i) => <path key={i} d={d} />)}</svg>;
+};
+export const ShieldCheck = icon(['M12 3 3 7v6c0 4 5 7 9 9 4-2 9-5 9-9V7Z', 'm8 12 3 3 5-6']);
+export const LayoutDashboard = icon(['M3 3h7v7H3Z', 'M14 3h7v7h-7Z', 'M3 14h7v7H3Z', 'M14 14h7v7h-7Z']);
+export const Package = icon(['m12 2 9 5v10l-9 5-9-5V7Z', 'm3 7 9 5 9-5', 'M12 12v10', 'm7.5 4.5 9 5']);
+export const Bell = icon(['M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9', 'M10 21h4']);
+export const History = icon(['M3 11a9 9 0 1 1 2 7', 'M3 4v7h7', 'M12 7v5l3 2']);
+export const LogOut = icon(['M9 21H3V3h6', 'M9 12h12', 'm17 8 4 4-4 4']);
+export const Plus = icon(['M12 5v14', 'M5 12h14']);
+export const Search = icon(['M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0', 'm15 15 6 6']);
+export const Radio = icon(['M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4', 'M7 7a7 7 0 0 0 0 10', 'M17 7a7 7 0 0 1 0 10', 'M4 4a11 11 0 0 0 0 16', 'M20 4a11 11 0 0 1 0 16']);
+export const ArrowLeft = icon(['M20 12H4', 'm10 6-6 6 6 6']);
+export const Check = icon(['m5 12 4 4L19 6']);
+export const AlertTriangle = icon(['m12 3 10 18H2Z', 'M12 9v4', 'M12 17h.01']);
+export const RefreshCw = icon(['M20 10a8 8 0 0 0-14-5L3 8', 'M3 3v5h5', 'M4 14a8 8 0 0 0 14 5l3-3', 'M16 16h5v5']);
+export const MapPin = icon(['M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z', 'M12 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z']);
+export const Move = icon(['m5 9-3 3 3 3', 'm9 5 3-3 3 3', 'm15 19 3 3 3-3', 'm19 9 3 3-3 3', 'M2 12h20', 'M12 2v20']);
+export const Blocks = icon(['M10 3 3 7v10l7 4 7-4V7Z', 'm3 7 7 4 7-4', 'M10 11v10', 'M14 7l7 4v10l-7-4V7Z']);
+export const ShieldAlert = icon(['M12 3 3 7v6c0 4 5 7 9 9 4-2 9-5 9-9V7Z', 'M12 8v4', 'M12 16h.01']);
+export const Lock = icon(['M19 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2Z', 'M7 11V7a5 5 0 0 1 10 0v4']);

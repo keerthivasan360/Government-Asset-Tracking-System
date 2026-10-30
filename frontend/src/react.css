@@ -1,0 +1,52 @@
+/* React interaction and icon treatments. */
+button:disabled{opacity:.5;cursor:wait}.button,.secondary-button,.logout,nav a,.text-link{display:inline-flex;align-items:center;justify-content:center;gap:8px}nav a{justify-content:flex-start}nav a svg{width:17px;height:17px;flex-shrink:0}nav a:first-child{background:transparent;color:#bed0c8}nav a.active,nav a:hover{background:#25473f;color:#e0f2c9}.logo{flex-shrink:0}.user small{font-size:8px;color:#8a9b90;margin-left:8px}.secondary-button{background:white;border:1px solid #dce3da;border-radius:6px;padding:10px 14px;color:#426450}.search-box{display:flex;align-items:center;position:relative;color:#839083}.search-box svg{position:absolute;left:12px}.search-box input{margin:0;padding-left:35px}.row-actions{display:flex;align-items:center;white-space:nowrap;gap:5px}.table-foot{display:flex;justify-content:space-between;color:#8b978e;padding:14px 24px;font-size:10px;background:#fcfdfb}.table-foot .dot{background:#85ac7a}.quiet>svg,.empty>svg{display:block;margin:0 auto 13px}.quiet>strong{display:block}.RESOLVED{background:#eaf4ed;color:#36805c}.OPEN{background:#fbece8;color:#b4594e}.startup{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center}.startup .error{max-width:500px}.login-body{min-height:100vh}.login-card .logo{color:#276b53}.error{margin-top:16px}.form-panel .error{margin-top:0}input[readonly]{background:#f4f6f2;color:#7b887b}input[aria-invalid=true]{border-color:#b4594e}.spin{animation:rotate 1.5s linear infinite}@keyframes rotate{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.spin{animation:none}}@media(max-width:760px){.search-box{width:100%}.secondary-button{font-size:11px}.user small{display:none}.row-actions{gap:8px}.page-title{flex-wrap:wrap}.page-title .button{margin-left:auto}}
+
+/* Simulation & Blockchain Specific Styles */
+.sim-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:30px}
+@media(max-width:1050px){.sim-layout{grid-template-columns:1fr}}
+.sim-card{background:#fff;border:1px solid var(--line);border-radius:9px;padding:24px}
+.sim-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sim-header h3{margin:0;font-size:16px;color:#182c2b;display:flex;align-items:center;gap:8px}
+.asset-selector{display:grid;gap:12px;margin-bottom:20px}
+.asset-item-card{border:1px solid var(--line);border-radius:8px;padding:14px;cursor:pointer;transition:all .2s ease;display:flex;justify-content:space-between;align-items:center;background:#fff}
+.asset-item-card:hover{border-color:#9dc1af;background:#f9fbf9}
+.asset-item-card.selected{border-color:#1e624f;background:#edf5f1;box-shadow:0 0 0 1px #1e624f}
+.asset-info strong{display:block;font-size:13px;color:#182c2b}
+.asset-info small{color:#76857e;font-size:11px}
+.zones-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:16px 0}
+.zone-btn{border:1px solid #dce3da;border-radius:8px;padding:14px;text-align:left;background:#fff;cursor:pointer;transition:all .15s ease;display:flex;flex-direction:column;gap:6px}
+.zone-btn:hover{border-color:#84a696;transform:translateY(-1px)}
+.zone-btn.current{border-color:#1e624f;background:#ebf5ef;cursor:default}
+.zone-btn.unauthorized{border-color:#f2c3ba;background:#fff8f6}
+.zone-btn.unauthorized:hover{border-color:#d75c4c;background:#feeeea}
+.zone-name{font-weight:600;font-size:12px;color:#182c2b;display:flex;align-items:center;gap:6px}
+.zone-tag{font-size:9px;padding:2px 6px;border-radius:4px;display:inline-block;width:fit-content;letter-spacing:.3px}
+.zone-tag.allowed{background:#e2f0e6;color:#286b4a}
+.zone-tag.restricted{background:#fae5e0;color:#b2493b}
+.breach-banner{background:#feeeea;border:1px solid #f6b5aa;border-radius:8px;padding:16px;margin:20px 0;display:flex;gap:14px;align-items:center;animation:pulseBorder 2s infinite}
+@keyframes pulseBorder{0%,100%{box-shadow:0 0 0 0 rgba(200,60,40,.3)}50%{box-shadow:0 0 0 6px rgba(200,60,40,0)}}
+.breach-banner svg{color:#bc493b;flex-shrink:0}
+.breach-banner strong{display:block;color:#9b3225;font-size:13px}
+.breach-banner p{margin:4px 0 0;font-size:11px;color:#674640}
+.success-banner{background:#eaf5ec;border:1px solid #b7dfc3;border-radius:8px;padding:16px;margin:20px 0;display:flex;gap:14px;align-items:center}
+.success-banner svg{color:#287558;flex-shrink:0}
+.success-banner strong{display:block;color:#1f5e46;font-size:13px}
+.success-banner p{margin:4px 0 0;font-size:11px;color:#456758}
+.chain-badge{background:#112f2b;color:#d5f2bf;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:600;display:inline-flex;align-items:center;gap:7px}
+.chain-badge.invalid{background:#541510;color:#ffc5bf}
+.blockchain-list{display:flex;flex-direction:column;gap:14px;margin-top:16px}
+.block-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.03);transition:border-color .15s}
+.block-card:hover{border-color:#b4cbbd}
+.block-card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.block-idx{font-weight:800;font-size:13px;color:#16634f;display:flex;align-items:center;gap:6px}
+.block-action{font-size:9px;font-weight:700;letter-spacing:.8px;padding:3px 8px;border-radius:4px}
+.block-action.GENESIS{background:#e7edf7;color:#39639f}
+.block-action.LOCATION_SHIFT{background:#e6f3eb;color:#287558}
+.block-action.SECURITY_BREACH_ALERT{background:#fdebea;color:#b84133}
+.block-action.ASSET_REGISTERED{background:#eef2df;color:#5a7336}
+.block-action.STATUS_ALERT{background:#fbeee0;color:#a45d25}
+.block-hash{background:#f5f7f4;border:1px solid #e1e7e2;border-radius:5px;padding:8px 12px;font-family:monospace;font-size:11px;color:#354d48;margin:8px 0;word-break:break-all}
+.block-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;font-size:11px;color:#6d7d76;margin-top:10px;padding-top:10px;border-top:1px dashed #e7ede9}
+.block-meta span{display:block}
+.block-meta strong{color:#273d38}
+.tag-pill{display:inline-block;padding:2px 7px;background:#ebf0ec;color:#455953;border-radius:3px;font-size:10px;margin:2px 3px 2px 0}
